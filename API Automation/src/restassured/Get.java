@@ -24,7 +24,8 @@ public class Get {
 		
 			String salary=json.getString("data.salary");
 		//update
-			int expectedsal=300000;
+			int expectedsal=300000 
+					;
 		given().log().all().header("Content-Type", "application/json").body("{\"name\":\"test\",\"salary\":\""+expectedsal+"\",\"age\":\"23\"}")
 		.when().put("/api/v1/update/"+id)
 		.then().assertThat().log().all().statusCode(200).body("message", equalTo("Successfully! Record has been updated."));

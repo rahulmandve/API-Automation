@@ -20,7 +20,6 @@ public class Post {
 	int id=	json.getInt("data.id");
 	System.out.println(id);
 		
-	
 	}
 
 }
