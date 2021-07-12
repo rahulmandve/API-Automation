@@ -22,4 +22,32 @@ public class Payload {
 				+ "}\r\n"
 				+ "";
 	}
+	
+	public static String bookPayload()
+	{
+		return "{\r\n"
+				+ "  \"dashboard\":{\r\n"
+				+ "    \"purchaseAmount\":2450,\r\n"
+				+ "    \"website\":\"www.google.com\"\r\n"
+				+ "  },\r\n"
+				+ "  \"courses\":[\r\n"
+				+ "    {\r\n"
+				+ "      \"title\":\"QA\",\r\n"
+				+ "      \"price\":100,\r\n"
+				+ "      \"copies\":2\r\n"
+				+ "    },\r\n"
+				+ "    {\r\n"
+				+ "      \"title\":\"Dev\",\r\n"
+				+ "      \"price\":90,\r\n"
+				+ "      \"copies\":5\r\n"
+				+ "    },\r\n"
+				+ "    {\r\n"
+				+ "      \"title\":\"Java\",\r\n"
+				+ "      \"price\":200,\r\n"
+				+ "      \"copies\":9\r\n"
+				+ "    }\r\n"
+				+ "    ]\r\n"
+				+ "}";
+		
+	}
 }
