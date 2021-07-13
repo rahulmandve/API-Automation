@@ -39,10 +39,7 @@ public class SerialiTest {
 						// in then()--verify the results
 						.then().assertThat().statusCode(200).extract().response().asString();
 				System.out.println(response);
-				// extract json response using JsonPath class
-				JsonPath json = new JsonPath(response);
-				String place_id = json.getString("place_id");// get place_id from response body.Id is created after post method
-																// hit
+				System.out.println(add.getWebsite());
 	}
 
 }
