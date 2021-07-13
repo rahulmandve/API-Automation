@@ -1,4 +1,4 @@
-package SerializationDeser;
+package Deserialization;
 
 public class EmployeePOJO {
 	private String name;
